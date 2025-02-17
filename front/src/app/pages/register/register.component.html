@@ -1,0 +1,69 @@
+<aplz-ui-logo size="lg"></aplz-ui-logo>
+
+<form [formGroup]="form" (ngSubmit)="register()">
+  <div class="grid gap-6 mb-6 md:grid-cols-2">
+    <div>
+      <label for="username" class="block mb-2 text-sm font-medium text-dark">
+        Nombre(s)
+      </label>
+      <input
+        type="text"
+        id="firstname"
+        class="bg-dark-background border border-dark-secondary text-dark rounded-lg focus:ring-special-info focus:border-special-info block w-full p-2.5"
+        placeholder="Nombre(s)"
+        formControlName="firstName"
+      />
+    </div>
+
+    <div>
+      <label for="lastname" class="block mb-2 text-sm font-medium text-dark">
+        Apellido paterno
+      </label>
+
+      <input
+        type="text"
+        id="lastname"
+        class="bg-dark-background border border-dark-secondary text-dark rounded-lg focus:ring-special-info focus:border-special-info block w-full p-2.5"
+        placeholder="Apellido paterno"
+        formControlName="lastName"
+      />
+    </div>
+
+    <div>
+      <label for="lastname" class="block mb-2 text-sm font-medium text-dark">
+        Apellido materno
+      </label>
+
+      <input
+        type="text"
+        id="secondLastName"
+        class="bg-dark-background border border-dark-secondary text-dark rounded-lg focus:ring-special-info focus:border-special-info block w-full p-2.5"
+        placeholder="Apellido materno"
+        formControlName="secondLastName"
+      />
+    </div>
+
+    <div>
+      <label for="dateOfBirth" class="block mb-2 text-sm font-medium text-dark">
+        Fecha de nacimiento
+      </label>
+
+      <input
+        type="date"
+        id="dateOfBirth"
+        class="bg-dark-background border border-dark-secondary text-dark rounded-lg focus:ring-special-info focus:border-special-info block w-full p-2.5"
+        placeholder="Fecha de nacimiento"
+        formControlName="dateOfBirth"
+      />
+    </div>
+  </div>
+  <button
+    aplzButton
+    aplzAppearance="stroked"
+    aplzColor="dark"
+    size="md"
+    type="submit"
+  >
+    Crear cuenta
+  </button>
+</form>
