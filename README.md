@@ -15,3 +15,5 @@ The backend provides the following core features:
 ## [Frontend](front/README.md)
 
 The frontend consumes the RESTful API endpoints provided by the backend. Please refer to the `front/README.md` for more details on the frontend setup and usage.
+
+> Development of the test must be done in a branch named `feature/[candidate's first name]_[candidate's last name]` (if there are conflicts, add the second last name), for example: `feature/juan_perez`. A pull request to the `master` branch of the repository should be made.
