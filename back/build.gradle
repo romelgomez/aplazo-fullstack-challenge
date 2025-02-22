@@ -29,6 +29,9 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation group: 'io.swagger.core.v3', name: 'swagger-models', version: '2.1.1'
+
+
     
     // Flyway dependencies
     // Flyway PostgreSQL 14+ support
